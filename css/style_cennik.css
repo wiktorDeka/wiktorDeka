@@ -1,0 +1,27 @@
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    place-items: center;
+    font-variant: small-caps;
+}
+
+table, tr, td{
+    padding: 38px;
+    font-size: 30px;
+    text-align: center;
+}
+.z{
+    font-size: 36px;
+}
+a{
+    color: #ff99a3;
+    text-decoration: none;
+}
+td a:hover{
+    color: #8ea4d2;
+    transition: 0.2s;
+    border-width: 0px 0px 1px 0px;
+    border-style: solid;
+    border-color: #8ea4d2;
+}

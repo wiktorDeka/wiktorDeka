@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta http-equiv="Content-Type" content="text/html"; charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B-ByPassion</title>
+    <link rel="icon" href="/image/favicon.png">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="log_panel">
+        <button class="powrot_l">POWRÓT</button>
+        <form action="/php/log.php" method="POST" autocomplete="off">
+                <label>LOGIN:<br></label> <input type="text" name="login" required><br>
+                <label>HASŁO:<br></label> <input type="password" name="haslo" required><br>
+                <input type="submit" value="ZALOGUJ">
+                <p>NIE MASZ KONTA? ZAŁÓŻ JE!<input type="button" id="reg_btn_in" value="zarejestruj się"></p>
+        </form>
+    </div>
+    <div class="reg_panel">
+        <button class="powrot_r">POWRÓT</button>
+        <form action="/php/reg.php" method="POST" autocomplete="off">
+                <label>imię:</label> <input type="text" name="imie"><br>
+                <label>nazwisko:</label> <input type="text" name="nazwisko"><br>
+                <label>email:</label> <input type="text" name="email"><br>
+                <label>tel.:</label> <input type="text" name="telefon"><br>
+                <input type="radio" name="plec" value="kobieta" checked><label>kobieta</label>
+                <input type="radio" name="plec" value="mezczyzna"><label>mężczyzna</label> <br>
+                <label>login:</label> <input type="text" name="login"><br>
+                <label>hasło:</label> <input type="password" name="haslo_r"><br>
+                <label>powtórz hasło:</label> <input type="password" name="haslo2_r"><br><br>
+                <input type="checkbox"><label><span style="font-size: 20px;">zapisuję się na newsletter</span></label><br>
+                <input type="checkbox"><label><span style="font-size: 14px;">akceptuję regulamin . zasady dotyczące danych informują, w jaki sposób gromadzimy, użytkujemy i udostępniamy dane użytkowników, a zasady dotyczące plików cookie informują jak korzystamy z plików cookie i podobnych technologii. możesz otrzymywać powiadomienia sms z b-bypassion, z których możesz zrezygnować w dowolnej chwili.</span></label><br>
+                <input type="submit" value="zarejestruj się"><br><br>
+                <h6>MASZ JUŻ KONTO? ZALOGUJ SIĘ! <input type="button" id="log_btn_in" value="zaloguj się"></h6>
+        </form>
+    </div>
+
+    <header>
+        <div class="menu_top"><a href="/subpages/sklep.php">sklep</a></div>
+        <div class="menu_top"><a href="/subpages/cennik.php">cennik</a></div>
+        <div class="menu_top"><a href="/subpages/zabiegi.php">zabiegi</a></div>
+        <div class="menu_top">
+            <img src="/image/logo.png" width="200px">
+        </div>
+        <div class="menu_top"><a href="/subpages/omnie.php">o mnie</a></div>
+        <div class="menu_top"><a href="/subpages/opinie.php">opinie</a></div>
+        <div class="menu_top"><a href="#" id="log_btn">zaloguj</a><br><br><a href="#" id="reg_btn">stwórz konto</a></div>
+    </header>
+
+    <main>
+        <div class="karuzela_container">
+            <div class="karuzela_slider">
+                <img src="image/5.png" alt="" id="lastClone">
+                <img src="image/1.png" alt="">
+                <img src="image/2.png" alt="">
+                <img src="image/3.png" alt="">
+                <img src="image/4.png" alt="">
+                <img src="image/5.png" alt="">
+                <img src="image/1.png" alt="" id="firstClone">
+            </div>
+            <img src="image/arrow_left.png" id="prevBtn">
+            <img src="image/arrow_right.png" id="nextBtn">
+        </div>
+    </main>
+
+    <footer>
+        <div id="socials">
+            <p>By<span style="color: #ff99a3">Passion</span><br>
+                <span style="font-size: 20px;">Agnieszka Balkiewicz</span>
+            </p>
+            <img src="/image/insta.png" width=42 id="instagram">
+            <img src="/image/fb.png" width=42 id="facebook">
+            <img src="/image/pin.png" width=42 id="pinterest">
+        </div>
+
+        <div id="modules">
+            <ul>
+                <div>
+                <li><a href="/index.php">home</a></li>
+                <li><a href="/subpages/kontakt.php">kontakt</a></li>
+                <li><a href="/subpages/omnie.php">o mnie</a></li>
+                </div>
+                <div>
+                <li><a href="/subpages/zabiegi.php">zabiegi</a></li>
+                <li><a href="/subpages/galeria.php">galeria</a></li>
+                <li><a href="/subpages/lokalizacja.php">adres</a></li>
+                </div>
+            </ul>
+        </div>
+
+        <div id="contact">
+            <h1>Kontakt</h1>
+            <textarea form="contact_form" placeholder="Treść wiadomości" cols=48 rows=11></textarea>
+            <div>
+                <form action="mailto:b_bypassion@gmail.com" method="POST" id="contact_form">
+                    <input type="text" name="imie" class="mail_input" placeholder="Imię"><br>
+                    <input type="text" name="nazwisko" class="mail_input" placeholder="Nazwisko"><br>
+                    <input type="submit" class="przycisk"> <input type="reset" value="Wyczyść" class="przycisk">
+                </form>
+            </div>
+        </div>
+
+        <div id="credits">
+            Wiktor Deka Copyright © 2021 All rights reserved
+        </div>
+    </footer>
+    <script src="/js/slider.js"></script>
+    <script src="/js/login.js"></script>
+    <script src="/js/socials.js"></script>
+</body>
+</html>

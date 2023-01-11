@@ -1,0 +1,40 @@
+.sklep_main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 1fr;
+    place-items: center;
+}
+.produkt_obraz{
+    grid-area: "obraz";
+}
+.produkt_opis{
+    grid-area: "opis";
+    padding-right: 50%;
+    font-size: 28px;
+}f
+.produkt_opis h6{
+    color: gray;
+}
+input[type="number"]{
+    height: 40px;
+    width: 70px;
+    margin-top: 10px;
+    border-radius: 4px;
+    font-size: 30px;
+    text-align: center;
+}
+main input[type="submit"]{
+    color: white;
+    border: 1px solid #8ea4d2;
+    border-radius: 4px;
+    background: #8ea4d2;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 24px;
+    font-variant: small-caps;
+    cursor: pointer;
+}
+input[type="submit"]:hover{
+    outline: 1px solid black;
+    transition: 0.1s;
+}
